@@ -1,0 +1,29 @@
+li { list-style-type: square }
+
+#cena {color: red;
+        font-weight: bold;}
+
+.wstep {font-style: italic;}
+
+td>img {border-style: solid;
+            border-color: blue;}
+
+td>img:hover {border-style: solid;
+                    border-color: red;}
+
+h1+h2 {letter-spacing: 5px;}
+
+td[colspan="2"] {font-size: small;}
+
+p+p {color: grey;}
+
+body {background-image: url(zdj2.png); background-repeat: repeat-y;}
+
+h1 {color: blue;}
+h1 {color: red;}
+
+
+*       { font-family: Tahoma; }
+body    { margin: 5em 10em 5em 10em; }
+p       { text-align: justify; }
+h1      { color: yellow;}

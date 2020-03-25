@@ -1,0 +1,128 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+p {
+    margin: 0%;
+    padding: 0%;
+}
+
+html {
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: unset;
+    text-decoration: unset;
+    color: black;
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+header {
+    display: flex;
+    padding: 30px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#hamburger {
+    display: none;
+}
+
+header h1 {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 32px;
+}
+header nav {
+    display: flex;
+    flex-grow: 2;
+    align-self: flex-start;
+    justify-content: flex-end;
+}
+
+header nav a {
+    width: 75px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+main article {
+    margin: 15px;
+    width: 100%;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.article_content {
+    text-align: justify;
+    padding: 15px;
+}
+
+.article_header {
+    height: 50px;
+    width: 50%;
+    font-size: 1.5em;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-width: 2px;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+footer {
+    height: 100px;
+    background-color: lightgrey;
+    border-top-style: solid;
+    border-width: 2px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+footer p b {
+    font-weight: bold;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+@media all and (max-width: 900px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+    header h1, header nav{
+        display: none;
+    }
+    header #hamburger {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+}
