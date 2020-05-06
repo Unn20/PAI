@@ -1,0 +1,25 @@
+﻿@{ 
+    var rule = Request["frule"];
+    var list = (List<string>)Session["frules"];
+    if (rule == "")
+    {
+        Response.Redirect("Rules.cshtml");
+    }
+    else
+    {
+        list.Add(rule);
+        Response.Redirect("Name.cshtml");
+    }
+}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>

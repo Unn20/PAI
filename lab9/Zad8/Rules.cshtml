@@ -1,0 +1,21 @@
+﻿@{
+    if (!(Session["frules"] is List<string>))
+    {
+        Session["frules"] = new List<string>();
+    }
+
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="~/RuleRedirect.cshtml" method="POST">
+        <label for="fname">Zasada:</label>
+        <input type="text" id="frule" name="frule" />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

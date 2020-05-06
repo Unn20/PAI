@@ -1,0 +1,32 @@
+﻿@{ 
+    var name = Request["fname"];
+    
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <h1> Hello </h1>
+</head>
+<body>
+    @{
+        var lista = new List<string>();
+        for (int i = 0; i < 10; i++)
+        {
+            lista.Add("His name is " + name);
+            <li>@lista[i]</li>
+        }
+
+        if (Session["frules"] != null)
+        {
+            var rules = (List<string>)Session["frules"];
+            foreach (var fcRule in rules)
+            {
+            <li>@fcRule</li>
+                }
+            }
+        }
+</body>
+</html>
