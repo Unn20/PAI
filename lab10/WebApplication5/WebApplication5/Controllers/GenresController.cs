@@ -17,7 +17,15 @@ namespace WebApplication5.Controllers
         // GET: Genres
         public ActionResult Index()
         {
-            return View(db.Genres.ToList());
+            //return View(db.Genres.ToList());
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("_GenresList", db.Genres.ToList());
+            }
+            else
+            {
+                return View(db.Genres.ToList());
+            }
         }
 
         // GET: Genres/Details/5
